@@ -250,7 +250,7 @@ nav{
     width: 50vh;
     opacity: 0%;
     transition: 4s;
-    animation: s1me 2s ;
+    animation: s1me 2s cubic-bezier(0,.94,0,.99) ;
 }
 @keyframes s1me{
     from{opacity:0%; transform: translateY(-10rem); filter: blur(25px);}
@@ -266,11 +266,11 @@ nav{
     backdrop-filter: blur(10px);
     padding: 40px;
     border-radius: 30px;
-    animation: s1p 3s ;
+    animation: s1p 3s cubic-bezier(0,.94,0,.99) ;
 }
 @keyframes s1p{
     from{opacity:0%; transform: translateY(-10rem);}
-    to{opacity:100%; backdrop-filter: blur(10px); }
+    to{opacity:100%; }
 }
 .s1 button{
     background: none;
@@ -372,20 +372,20 @@ nav{
     height: 35vh;
 }
 @keyframes blur{
-    from{filter:blur(10px);scale:0; opacity:0%;}
-    to{filter:blur(0px);scale: 1; opacity: 100%;}
+    from{ opacity:0%; transform: translateX(-25rem);}
+    to{ opacity: 100%;}
 }
 @keyframes revblur{
-    from{filter:blur(0px);scale:1; opacity: 100%;}
-    to{filter:blur(10px);scale: 0; opacity: 0%;}
+    from{ opacity: 100%;}
+    to{ opacity: 0%; transform: translateX(-25rem);}
 }
 @keyframes zoom{
-    from{opacity:100%;scale:1;}
-    to{opacity:0%;scale: 200; }
+    from{opacity:100%;  }
+    to{opacity:0%;  transform: translateX(25rem); }
 }
 @keyframes back{
-    from{opacity:0%;scale:20;}
-    to{opacity:100%;scale: 1; transform: rotate(0deg);}
+    from{opacity:0%; transform: translateX(25rem);}
+    to{opacity:100%; }
 }
 .sk{
     opacity: 0%;
@@ -531,6 +531,9 @@ nav{
     }
     main{
         height: 100vh;
+    }
+    body{
+        overflow: hidden;
     }
    
 }

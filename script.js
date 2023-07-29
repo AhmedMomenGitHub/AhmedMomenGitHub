@@ -43,7 +43,7 @@ about.addEventListener('mouseover',function (){
     pme.style.opacity='100%';
     skills.style.opacity='30%';
     projec.style.opacity='30%';
-    audio.play();
+    // audio.play();
 })
 about.addEventListener('mouseout',function (){
     port.style.opacity='30%';
@@ -120,15 +120,15 @@ function skillsin(){
     homepage.style.animation=' page 2s cubic-bezier(1,-0.01,0,.99)';
     select.style.animation='select 2s cubic-bezier(1,-0.01,0,.99)';
     shape.style.left='100rem';
-    shape.style.transition='.1s';
+    shape.style.transition='.3s';
     intro.style.display='none';
 },1200);}
 
     function dev(){
              
     s2dev.style.display='flex';
-    s2dev.style.animation='blur 1s cubic-bezier(0.07, 0.01, 0, 0.99)' ;
-    s2option.style.animation='zoom 1s cubic-bezier(0.07, 0.01, 0, 0.99)';
+    s2dev.style.animation='blur 1s cubic-bezier(0,.94,0,.99)' ;
+    s2option.style.animation='zoom 1s cubic-bezier(0,.94,0,.99)';
     s2option.style.position='absolute';
     s2option.addEventListener('animationend',function (){
     s2dev.style.display='flex';
@@ -145,8 +145,8 @@ function skillsin(){
     function bac(){
     s2dev.style.display='flex';
 
-    s2dev.style.animation='revblur 2s cubic-bezier(0,.94,0,.99)';
-    s2option.style.animation='back 2s cubic-bezier(0,.94,0,.99)';
+    s2dev.style.animation='revblur 1s cubic-bezier(0,.94,0,.99)';
+    s2option.style.animation='back 1s cubic-bezier(0,.94,0,.99)';
     s2option.style.display='flex';
     office.style.animation='none';
     design.style.animation='none';
