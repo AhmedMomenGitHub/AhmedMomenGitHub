@@ -1,0 +1,538 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Zekton;
+    font-weight: 50px;
+    overflow: hidden;
+    zoom: reset;
+
+}
+@font-face {
+    font-family: Zekton;
+    src: url(ZEKTON_.TTF);
+}
+
+#logointro{
+    color:rgb(255, 255, 255);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    align-items: center;
+    opacity: 0;
+    animation: appear 4s ease-in-out .5s;
+}
+#logointro img{
+    width: 20vh;
+    inset: 0;
+    
+}
+
+ #wel{
+    color:rgb(255, 255, 255);
+    position: absolute;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    inset: 0;
+    z-index: 200;
+    font-size: 30px;
+    align-items: center;
+    opacity: 0;
+    animation: appear 4s ease-in-out .5s;
+}
+@keyframes appear{
+    0%{opacity:0;}
+    50%{opacity:100%;}
+    100%{opacity:0;}
+    
+}
+body{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    
+}
+.skills{
+    letter-spacing: 6.5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    animation: ya .5s  cubic-bezier(0.07, 0.01, 0, 0.99) ;
+
+    /* animation: move .8s cubic-bezier(1,-0.01,0,.99); */
+
+}
+.icns{
+    width: 3vh;
+    height: 3vh;
+    padding:5px 9px 0px 5px;
+    opacity: 50%;
+}
+
+
+
+.about{
+    display: flex;
+    gap: 5px;
+    animation: ya 1s  cubic-bezier(0.07, 0.01, 0, 0.99);
+
+    /* animation: move .5s cubic-bezier(1,-0.01,0,.99); */
+
+}
+#logo{
+    width: 3vh;
+    height: 3vh;
+    padding-top: 7px;
+}
+.projec{
+    display: flex;
+    gap: 5px;
+    /* animation: move 1.3s cubic-bezier(1,-0.01,0,.99); */
+    animation: ya 1.5s  cubic-bezier(0.07, 0.01, 0, 0.99);
+
+    
+}
+
+
+.social{
+    letter-spacing: 13px;
+}
+
+.port,.folio{
+    position: absolute;
+    color: white;
+    font-size: 7rem;
+     /* background: url(clip.png); 
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter:saturate(0); */
+    z-index: -20;
+
+    opacity: 0%;
+    display: none;
+    animation: opacityport 3s infinite   ;
+    transition: 0.5s;
+}
+
+@keyframes opacityport{
+    0%{opacity:5%; }
+    50%{opacity:15%;}
+    100% {opacity:5%;};
+}
+
+main{
+    display: none;
+    justify-content: center;
+    opacity: 0%;
+    align-items: center;
+    width: 100%;
+    transition: 0.5s;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    letter-spacing: 4px;
+    transition: 0.5s;
+    display: none;
+    transition: 0.5s;
+
+
+}
+@keyframes ya{
+    from{
+        /* transform:translateY(15rem); */
+        filter: blur(15px);
+        letter-spacing: px;
+        scale: 0;
+    }
+    to{transform: translateY(0rem);}
+}
+nav{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10vh;
+    flex-direction: column;
+    gap: 50px;
+    font-size: 25px;
+    height: 35vh;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.064);
+    animation: nav 2s;
+    
+}
+@keyframes nav{
+    from{opacity:0;}
+    to{opacity:100%}
+}
+.show{
+    width: 37.5%;
+    height: 100vh;
+    color: white;
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 3px;
+    padding: 0 0px;
+
+
+}
+.result{
+    width: 37.5%;
+    height: 100vh;
+    display: flex;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.result .me{
+    width: 15rem;
+    transition: .5s;
+    opacity: 0;
+}
+.pme{
+    opacity: 0;
+    transition: .5s;
+    font-size: 20px;
+    width: 60vh;
+    left: 60rem;
+    margin-left:20px;
+    
+}
+.shape{
+
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    left: -110rem;
+    z-index: 5;
+    transition: .3s ease-in-out;
+    gap: 20px;
+    color: rgb(43, 43, 43);
+
+
+    
+}
+#intro{
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 100;
+    color: rgb(0, 0, 0);
+    gap: 30px;
+    font-size: 60px;
+    font-weight: 2000px;
+    
+}
+.s1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    padding: 0 50px;
+    color: white;
+    display: none;
+    width: 50vh;
+    padding-top: 2.7rem;
+}
+.s1 .me{
+    width: 50vh;
+    opacity: 0%;
+    transition: 4s;
+    animation: s1me 2s ;
+}
+@keyframes s1me{
+    from{opacity:0%; transform: translateY(-10rem); filter: blur(25px);}
+    to{opacity:100%; backdrop-filter: blur(10px); }
+}
+.s1 p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5rem;
+    transform: translateY(-12rem);
+    background-color: rgba(174, 174, 174, 0.098);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 30px;
+    animation: s1p 3s ;
+}
+@keyframes s1p{
+    from{opacity:0%; transform: translateY(-10rem);}
+    to{opacity:100%; backdrop-filter: blur(10px); }
+}
+.s1 button{
+    background: none;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.446);
+    border: 0px solid ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: rgba(174, 174, 174, 0.306);
+    padding: 3px 70px 7px 70px;
+    transform: translateY(-10rem);
+    transition: 0.3s;
+    border-radius: 20px;
+
+
+}
+.s1 button:hover{
+    color: rgba(255, 255, 255, 0.684);
+
+}
+
+.s2option{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    height: 100vh;
+    font-size: 30px;
+    flex-direction: column;
+    gap: 2rem;
+}
+.s2option a{
+    cursor: pointer;
+    transition: 0.2s;
+
+    padding: 0 20px 5px 20px ;
+    border: 2px solid transparent;
+    padding: 0 20px 5px 20px ;
+    color: white;
+    border-radius: 20px;
+    margin-inline: 10px;
+    background: none;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .3s;
+
+
+}
+
+.s2option a:hover{
+  
+    color: rgba(255, 255, 255, 0.349);
+
+}
+.options{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: rgba(174, 174, 174, 0.095);
+    backdrop-filter: blur(10px);
+    border-radius: 0px;
+    padding: 40px 5px;
+
+}
+.select{
+    font-size: 20px;
+    padding-bottom: 10px;
+    z-index: -200;
+    animation: select 2s cubic-bezier(1,-0.01,0,.99);
+    
+}
+@keyframes select{
+    from{opacity:0%; transform: translateY(5rem);}
+    to{opacity:100%; }
+}
+
+
+.s2dev{
+    color: white;
+    font-size: 20px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    gap: 20px;
+    
+}
+.skill{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.067);
+    border-radius: 30px;
+    padding: 0 70px;
+    height: 35vh;
+}
+@keyframes blur{
+    from{filter:blur(10px);scale:0; opacity:0%;}
+    to{filter:blur(0px);scale: 1; opacity: 100%;}
+}
+@keyframes revblur{
+    from{filter:blur(0px);scale:1; opacity: 100%;}
+    to{filter:blur(10px);scale: 0; opacity: 0%;}
+}
+@keyframes zoom{
+    from{opacity:100%;scale:1;}
+    to{opacity:0%;scale: 200; }
+}
+@keyframes back{
+    from{opacity:0%;scale:20;}
+    to{opacity:100%;scale: 1; transform: rotate(0deg);}
+}
+.sk{
+    opacity: 0%;
+    transition: 0.5s;
+    width: 200px;
+    position: absolute;
+    animation: rotatesk 2s infinite;
+}
+.psk{
+    opacity: 0;
+    transition: .5s;
+    font-size: 20px;
+    position: absolute;
+    backdrop-filter: blur(10px);
+}
+@keyframes rotatesk{
+    from{transform: rotate(0deg)}
+    to{transform: rotate(360deg)};
+}
+
+.back{
+    padding: 0 20px 5px 20px ;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 40px 10px 40px;
+    background: none;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    transition: 1s;
+    background-color: rgba(174, 174, 174, 0.306);
+
+
+}
+.homepage{
+    padding: 0 20px 5px 20px ;
+    border: 2px solid transparent;
+    padding: 0 20px 5px 20px ;
+    color: white;
+    border-radius: 7px;
+    padding: 3px 30px 8px 30px;
+    margin-inline: 20px;
+    background: none;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: rgba(174, 174, 174, 0.306);
+    transition: .3s;
+}
+@keyframes page{
+    from{opacity:0%; transform: translateY(-10rem);}
+    to{opacity:100%; }
+}
+.homepage:hover{
+    color:rgba(255, 255, 255, 0.388);
+}
+.office{
+    letter-spacing: 3px;
+    animation: move 1.3s cubic-bezier(1,-0.01,0,.99);
+}
+.prog{
+    animation: move .8s cubic-bezier(1,-0.01,0,.99);
+}
+.design{
+    animation: move .3s cubic-bezier(1,-0.01,0,.99);
+}
+@keyframes move{
+    from{transform: translateX(-10rem)}
+    to{transform: translateX(0)}
+}
+
+
+
+.text{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 15vh;
+
+}
+.pro{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 30vh;
+}
+.pro .html{
+    border: 2px solid;
+    animation: html 2s ease-in-out ;
+    transition: 1s;
+    width: 100%;
+}
+@keyframes html{
+    from{width: 0%};
+    to{width: 100%;}
+}
+.pro .css{
+    border: 2px solid;
+    animation: css 2s ease-in-out ;
+    transition: 1s;
+    width: 90%;
+}
+@keyframes css{
+    from{width: 0%};
+    to{width: 90%;}
+}
+.pro .js{
+    border: 2px solid;
+    animation: css 2s ease-in-out ;
+    transition: 1s;
+    width: 70%;
+}
+@keyframes js{
+    from{width: 0%};
+    to{width: 90%;}
+}
+
+.pro .php{
+    border: 2px solid;
+    animation: css 2s ease-in-out ;
+    transition: 1s;
+    width: 60%;
+}
+@keyframes php{
+    from{width: 0%};
+    to{width: 60%;}
+}
+.pr{
+    position: absolute;
+    width: 15rem;
+    opacity: 0%;
+    transition: 1s;
+
+} 
+@media (max-width:1090px){
+    .port,.folio{
+        font-size: 40px;
+    }
+    .result.me,.sk,.pr,.pme,.psk,.pr{
+        display: none;
+    }
+    main{
+        height: 100vh;
+    }
+   
+}
+
+
